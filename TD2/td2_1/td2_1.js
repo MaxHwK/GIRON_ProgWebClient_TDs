@@ -59,7 +59,6 @@ function manipulationDOM() {
 
 
     let tab = document.getElementsByTagName("ul");
-
     let tabfin = tab[0];
     let tabmilieu = tab[2];
     let tabdebut = tab[4];
