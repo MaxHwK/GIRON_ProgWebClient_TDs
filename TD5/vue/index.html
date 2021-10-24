@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> TD5 - Utilisation d'une API </title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body onload="videSelect()">
+
+    <h1> TD n°5 </h1>
+
+    <select name="region" id="region" onchange="afficheRegion()">
+        <option value=""> Veuillez choisir une région </option>
+    </select>
+
+    <select name="departement" id="departement" onchange="afficheDpt()"> 
+        <option value=""> Départements de cette région </option>
+    </select>
+
+    <select name="commune" id="commune" onchange="afficheCom()"> 
+        <option value=""> Communes de ce département </option>
+    </select>
+
+    <p> Population : <b> <span id="population"> </span> </b> </p>
+
+    <table id="tabCommunes">
+        <tr>
+            <td> Nom </td>
+            <td> Code Postal </td>
+            <td> Population </td>
+        </tr>
+    </table>
+
+    <p> Population totale : <b> <span id="popuTotale"> </span> </b> </p>
+
+    <button onclick="afficheMeteo()"> Afficher la météo du jour dans cette commune </button>
+
+    <script src="../js/afficheInfos.js"></script>
+
+</body>
+
+</html>
