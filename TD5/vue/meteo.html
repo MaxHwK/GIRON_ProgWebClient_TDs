@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> TD5 - Météo </title>
+    <script src="https://kit.fontawesome.com/c88302425e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="../css/styleMeteo.css">
+</head>
+
+<body>
+
+    <p> <i class="fa fa-globe-europe"></i> <b> <span id="commune"> </span> </b> </p>
+
+    <p id="pTemperature"> <i class="fa fa-thermometer-half"></i> Température : <b> <span id="temperature"> </span> °C </b> </p>
+
+    <p id="pTemps"> <i class="fa fa-cloud-sun"></i> Temps : <b> <span id="temps"> </span> </b> </p>
+
+    <p id="pRessenti"> <i class="fa fa-wind"></i> Ressenti : <b> <span id="ressenti"> </span> °C </b> </p>
+
+    <p id="pTempmin"> <i class="fa fa-thermometer-quarter"></i> Température Minimale : <b> <span id="tempmin"> </span> °C </b> </p>
+
+    <p id="pTempmax"> <i class="fa fa-thermometer-three-quarters"></i> Température Maximale : <b> <span id="tempmax"> </span> °C </b> </p>
+
+    <p id="pHumidite"> <i class="fa fa-cloud-showers-heavy"></i> Taux d'humidité : <b> <span id="humidite"> </span> % </b> </p>
+
+    <div id="carte"> </div>
+
+    <form action="index.html" method="get">
+        <i class="fa fa-hand-point-left"></i>
+        <input type="submit" value="Retourner à la page d'accueil">
+    </form>
+
+    <script src="../js/meteo.js" type="module"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+</body>
+
+</html>

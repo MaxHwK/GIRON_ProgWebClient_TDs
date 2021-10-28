@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> TD5 - Utilisation d'une API </title>
+    <script src="https://kit.fontawesome.com/c88302425e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styleIndex.css" />
+</head>
+
+<body onload="videSelect()">
+
+    <h1> TD n°5 <i class="fa fa-globe-europe"></i> </h1>
+
+    <p> Veuillez choisir une <b>région</b>, puis un <b>département</b> de cette même région et pour finir une <b>commune</b> de ce même département ! </p>
+
+    <select name="region" id="region">
+        <option value=""> Régions </option>
+    </select>
+
+    <select name="departement" id="departement"> 
+        <option value=""> Départements </option>
+    </select>
+
+    <select name="commune" id="commune"> 
+        <option value=""> Communes </option>
+    </select>
+
+    <p> <i class="fa fa-users"></i> Population : <b> <span id="population"> </span> habitants. </b> </p>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th> Nom </th>
+                <th> Code Postal </th>
+                <th> Population </th>
+            </tr>
+        </thead>
+
+        <tbody id="infosCommunes"> </tbody>
+
+    </table>
+
+    <p> <i class="fa fa-users"></i> Population totale : <b> <span id="popuTotale"> </span> habitants. </b> </p>
+
+    <form action="meteo.html" method="get">
+        <i class="fa fa-cloud-sun"></i>
+        <input type="submit" value="Afficher la météo du jour de cette commune">
+    </form>
+
+    <script src="../js/afficheInfos.js" type="module"></script>
+
+</body>
+
+</html>
