@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Wallet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand">My wallet</span>
+    </nav>
+
+
+    <div class="container">
+
+        <form>
+            <div class="row mt-4 mx-2">
+                <div class="col-6 col-sm-4 col-md-2 my-1">
+                    <input type="text" class="form-control" id="amount" placeholder="Amount">
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 my-1">
+                    <select class="form-control" id="currency_list">
+                </select>
+                </div>
+                <div class="col-12 col-sm-5 col-md-8 my-1">
+                    <button type="button" class="btn btn-success" id="btn_deposit">Deposit</button>
+                    <button type="button" class="btn btn-danger" id="btn_withdraw">Withdraw</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="row my-2 mx-3">
+            <div class="alert alert-danger" id="error-message" role="alert" style="visibility: hidden;">
+            </div>
+        </div>
+
+        <div class="row py-2 mx-2">
+            <h2>In your wallet</h2>
+            <table class="table table-hover table-sm" id="wallet-table">
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="wallet-tbody">
+                </tbody>
+            </table>
+            <div>
+                <p>Total (in euros): <span id="total_wallet">0</span>€</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="../js/usewallet.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
